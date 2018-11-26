@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: Kay Lin
+// Created on: 28th-Nov_2017
+// Created for: ICS3U
+// This program displays finging 2D
+
+
+func twoDimensionLoopAverage(array:[[Int]]) -&gt; Int {
+    // finds average in passed 2D array
+    var total = 0
+    //var lengthArra = array[0]
+    
+    // let length = s.characters.count
+    for row in array {
+        for column in row {
+            total = total + column
+            show(column)
+        }
+    }
+    var average = total /
+        (array[0].count * array.count)
+    return average
+}
+
+// input
+show("Enter desired number of rows: ")
+var rows_number = Float(ask())
+
+
+//show(row_number)
+show("Enter desired number of columns: ")
+var columns_number = Float(ask())
+//show(column_number)
+if rows_number! &lt; 0 || columns_number! &lt; 0 {
+    show("Invalid number")
+}
+else{
+    // pass
+}
+
+// process
+var table: [[Int]] = []
+
+for rows in 0 ... Int(rows_number!-1) {
+    table.append([])
+    for columns in 0 ... Int(columns_number!-1) {
+        table[rows].append(Int(arc4random_uniform(50)+1))
+        
+    }
+}
+
+// output
+var average_of_element_table: String
+
+average_of_element_table = "The average of the numbers in the table is " + String(twoDimensionLoopAverage(array: table))
+
+show("table: \(table)")
+show(average_of_element_table)
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 1254}</string>
+			<key>OriginalContent</key>
+			<string>// 1. Ask for a date
+show("What is your birthdate?")
+let birthdate = askForDate("Birthdate")
+
+// 2. Ask for a number
+show("What is your favorite number?")
+let number = askForNumber("Number")
+
+// 3. Ask for a choice from a set of options
+show("What is your favorite color?")
+let color = askForChoice("Color", options: ["Blue", "Green", "Orange", "Purple", "Red", "Yellow"])
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 374}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Types.playgroundpage/Contents.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: christian briglo 
+
+
+
+func twoDimensionLoopAverage(array:[[Int]]) -&gt; Int {
+    // finds average in passed 2D array
+    var total = 0
+    //var lengthArra = array[0]
+    
+    // let length = s.characters.count
+    for row in array {
+        for column in row {
+            total = total + column
+            //show(column)
+        }
+    }
+    var average = total /
+        (array[0].count * array.count)
+    return average
+}
+
+// input
+show("Enter number of rows: ")
+var rowNumber = Float(ask())
+
+
+show("Enter number of columns: ")
+var columNumber = Float(ask())
+
+// process
+var table: [[Int]] = []
+
+for rows in 0 ... Int(rowNumber!-1) {
+    table.append([])
+    for columns in 0 ... Int(columNumber!-1) {
+        table[rows].append(Int(arc4random_uniform(100)+1))
+        
+    }
+}
+
+// output
+var avergeOfElementTable : String
+
+avergeOfElementTable = "The average of the numbers in the table is " + String(twoDimensionLoopAverage(array: table))
+
+show("table: \(table)")
+show(avergeOfElementTable)
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 1009}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 72}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
